@@ -1,0 +1,5 @@
+# Uncommon HTML Bug: Undeclared Variable in Function Scope This repository demonstrates a subtle bug related to variable scope in HTML/JavaScript. The bug occurs when a variable is used within a function without being declared within that function's scope.  The solution shows how to correctly declare the variable, ensuring consistent and expected behavior across browsers.
+
+## Bug Description The `bug.html` file contains a simple HTML page with a script that attempts to access a variable (`myVar`) inside a function (`myFunc`) without declaring it within the function itself. This behavior is unpredictable; some browsers might treat `myVar` as a global variable, while others might throw an error.
+
+## Solution The `bugSolution.html` file demonstrates the correct way to handle this by declaring `myVar` within the `myFunc` function using `let`, `const`, or `var`. This ensures that the variable is properly scoped to the function and avoids the unpredictable behavior of the original code. 
